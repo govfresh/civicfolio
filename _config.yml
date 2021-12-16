@@ -1,0 +1,81 @@
+# General
+title: Civic Folio
+description: "A portfolio website for civic technologists."
+avatar: avatar.jpg
+
+# Social media
+email: mailto:name@email.com
+calendar: /calendar
+linkedin: https://linkedin.com
+twitter: https://twitter.com
+medium: https://medium.com
+figma: https://figma.com
+github: https://github.com
+facebook: https://facebook.com
+instagram: https://instagram.com
+rss: /rss
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+
+# Date/time
+date: "%B %-d, %Y"
+timezone: 
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "work"
+  - scope:
+      path: ""
+      type: "category"
+    values:
+      layout: "category"
+      
+collections:
+  pages:
+    output: true
+    permalink: :title
+  posts:
+    output: true
+    permalink: /posts/:title
+  work:
+    output: true
+    permalink: /work/:title
+  categories:
+    output: true
+    permalink: categories/:title
+
+# Exclude
+exclude:
+  - CNAME
+  - readme.md
+  - gemfiles/
+  - Gemfile
+#   - Gemfile.lock
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

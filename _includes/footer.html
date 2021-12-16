@@ -1,0 +1,77 @@
+{% include analytics.html %}
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <p class="brand">{{ site.title }}</p>
+                    <p>{{ site.description }}</p>
+                    <p>
+                        {% if site.email %}
+                        <a href="{{ site.email }}" aria-label="Email">
+                            <i class="fas fa-at fa-lg"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.calendar %}
+                        <a href="{{ site.calendar }}" aria-label="Calendar">
+                            <i class="fas fa-calendar fa-lg"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.linkedin %}
+                        <a href="{{ site.linkedin }}" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.twitter %}
+                        <a href="{{ site.twitter }}" aria-label="Twitter">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.medium %}
+                        <a href="{{ site.medium }}" aria-label="Medium">
+                            <i class="fab fa-medium fa-lg"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.figma %}
+                        <a href="{{ site.figma }}" aria-label="Figma">
+                            <i class="fab fa-figma fa-lg"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.github %}
+                        <a href="{{ site.github }}" aria-label="GitHub">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.facebook %}
+                        <a href="{{ site.facebook }}" aria-label="Facebook">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.instagram %}
+                        <a href="{{ site.instagram }}" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.rss %}
+                        <a href="{{ site.rss }}" aria-label="RSS">
+                            <i class="fas fa-rss fa-lg"></i>
+                        </a>
+                        {% endif %}
+                    </p>
+                </div>
+                <div class="col-sm-5">
+                    <ul class="list-unstyled">
+                        {% for item in site.data.nav.docs %}
+                        {% if item.url %}
+                        <li>
+                            <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<div class="card-deck">
+    {% if include.limit %}
+        {% assign limitVar = include.limit | plus: 0 %}
+    {% endif %}
+    {% for item in site.data.press.docs limit:limitVar %}
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex align-items-stretch">
+        <div class="card">
+            <div class="card-body">
+                <i class="fa-solid fa-arrow-up-right-from-square mb-2"></i>
+                <h3>
+                    <a href="{{ site.baseurl }}{{ item.url }}" class="stretched-link">
+                        {{ item.title }}
+                    </a>
+                </h3>
+                <p class="card-text">{{ item.source }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

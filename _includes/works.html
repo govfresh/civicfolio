@@ -1,0 +1,19 @@
+<div class="card-deck">
+    {% for page in site.work limit:limitVar %}
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex align-items-stretch">
+        <div class="card">
+            <div class="card-body">
+                {% if page.img %}
+                <img src="{{ site.baseurl }}/img/work/{{ page.img }}" alt="{{ page.img-alt }}" class="card-img-top mb-4 lg">
+                {% endif %}
+                <h3>
+                    <a href="{{ site.baseurl }}{{ page.url }}" class="stretched-link">
+                        {{ page.title }}
+                    </a>
+                </h3>
+                <p class="card-text">{{ page.description }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

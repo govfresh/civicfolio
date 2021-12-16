@@ -1,0 +1,22 @@
+<div class="card-deck">
+    {% if include.limit %}
+        {% assign limitVar = include.limit | plus: 0 %}
+    {% endif %}
+    {% for post in site.posts limit:limitVar %}
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex align-items-stretch">
+        <div class="card">
+            <div class="card-body">
+                <h3>
+                    <a href="{{ site.baseurl }}{{ post.url }}" class="stretched-link">
+                        {{ post.title }}
+                    </a>
+                </h3>
+                <p>
+                    <small>{{ post.date | date: "%B, %-d %Y"}}</small>
+                </p>
+                <p class="card-text">{{ post.description }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

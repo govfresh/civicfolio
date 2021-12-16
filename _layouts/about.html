@@ -1,0 +1,19 @@
+---
+layout: about
+---
+{% include header.html %}
+{% include nav.html %}
+<main>
+    {% include jumbotron.html %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                {{ content }}
+            </div>
+            <div class="col-sm-4">
+                <img src="{{ site.baseurl }}/img/profile.png" alt="{{ site.title }}" class="rounded-circle">
+            </div>
+        </div>
+    </div>
+</main>
+{% include footer.html %}
