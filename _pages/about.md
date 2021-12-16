@@ -2,6 +2,7 @@
 title: About
 description: Sample page using the About layout template.
 layout: about
+permalink: /about/
 ---
 
 Civic Folio is a portfolio website for civic technologists.
