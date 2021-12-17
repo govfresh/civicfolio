@@ -1,18 +1,17 @@
 :root {
-    --color-1: #5b029c;
+    --color-1: #0076d6;
     --color-2: #212121;
     --color-3: #c9c9c9;
     --color-4: #ffffff;
-    --color-5: #b548ff;
+    --color-5: #54278f;
     --color-6: #f1f1f1;
+    /* Accent font */
     --font-1: 'Playfair Display', serif;
+    /* Secondary font */
     --font-2: 'Open Sans', sans-serif;
-    --font-3: 'Playfair Display', serif;
-    --font-4: 'Roboto Mono', monospace;
-    --weight-1: 300;
+    --weight-1: 400;
     --weight-2: 400;
     --weight-3: 700;
-    --weight-4: 900;
     --size-1: 0;
     --size-2: .5rem;
     --size-3: 1rem;
@@ -40,19 +39,22 @@ body {
     font-weight: var(--weight-1);
 }
 
-/* Icons */
+/* Links */
+
+a, a:visited, a:hover {
+    color: var(--color-1);
+}
+
+a:visited {
+    color: var(--color-5);
+}
 
 a.dark, a.dark:visited {
     color: var(--color-2);
     text-decoration: none;
 }
 
-/* Images */
-
-img {
-    height: auto;
-    max-width: 100%;
-}
+/* Headers */
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
     color: var(--color-2);
@@ -60,20 +62,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .d
     font-weight: var(--weight-3);
 }
 
-.h4 {
-    font-weight: var(--weight-3);
-    line-height: var(--size-5);
-}
+/* Lists */
 
 ul.list-unstyled li {
-    padding-bottom: var(--size-3);
-}
-
-a, a:visited, a:hover {
-    color: var(--color-1);
-}
-
-h2 {
     padding-bottom: var(--size-3);
 }
 
@@ -87,7 +78,7 @@ h2 {
 
 .navbar-brand, .brand {
     font-family: var(--font-1);
-    font-weight: var(--weight-4) !important;
+    font-weight: var(--weight-3) !important;
 }
 
 a.navbar-brand:hover {
@@ -110,17 +101,23 @@ a.navbar-brand:hover {
 
 .navbar li a, .navbar li.active a, .navbar li.active a:visited, a.nav-link, a.nav-item {
     color: var(--color-2) !important;
-    font-family: var(--font-4);
+    font-family: var(--font-2);
     font-weight: var(--weight-2) !important;
 }
 
 .lead {
-    font-family: var(--font-2);
     color: var(--color-2);
+    font-family: var(--font-2);
+    font-size: var(--size-10);
     font-weight: var(--weight-1);
 }
 
 /* Images */
+
+img {
+    height: auto;
+    max-width: 100%;
+}
 
 img.md {
     max-width: var(--size-15);
@@ -164,6 +161,10 @@ img.lg {
 
 /* Main */
 
+main h2 {
+    padding: var(--size-4) var(--size-1);
+}
+
 main .container {
     padding-bottom: var(--size-3);
     padding-top: var(--size-3);
@@ -203,40 +204,40 @@ blockquote {
     color: var(--color-2);
 }
 
-/* Buttons / nav pills */
+/* Buttons */
 
-.btn-primary, a.btn-primary, a.btn-primary:active, a.btn-primary:hover, a.btn-primary:visited {
-    background-color: var(--color-2);
-    color: var(--color-4);
-    font-family: var(--font-1);
-    font-size: var(--size-4);
-    font-weight: var(--weight-2);
-    margin-bottom: var(--size-2);
-    margin-top: var(--size-2);
+a.btn {
+    margin-top: var(--size-3);
     text-decoration: none;
-    border: var(--size-13) solid var(--color-2);
 }
 
-a.btn-primary:hover {
+a.btn-outline-primary, a.btn-outline-primary:visited {
+    color: var(--color-2);
+    border-color: var(--color-2);
+}
+
+a.btn-outline-primary:hover {
     background-color: var(--color-2);
-    border: var(--size-13) solid var(--color-2);
+    border-color: var(--color-2);
     color: var(--color-4);
 }
 
-/* Badges */
+a.btn-outline-secondary, a.btn-outline-secondary:visited {
+    border-color: var(--color-1);
+    color: var(--color-1);
+}
 
-.badge {
-    background-color: white;
-    border-radius: var(--size-1) !important;
-    font-weight: var(--weight-3) !important;
+a.btn-outline-secondary:hover {
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+    color: var(--color-4);
 }
 
 /* Footer */
 
 .footer {
-    margin-top: var(--size-5) !important;
-    padding-bottom: var(--size-5);
-    padding-top: var(--size-5);
+    margin: var(--size-5) var(--size-1) var(--size-1) var(--size-1) !important;
+    padding: var(--size-5) var(--size-1);
     border-top: var(--size-13) solid var(--color-2);
     font-size: var(--size-3);
 }
@@ -251,9 +252,7 @@ a.btn-primary:hover {
     padding: var(--size-1) var(--size-1) var(--size-7) var(--size-1);
 }
 
-.footer a {
-    text-decoration: none;
-}
+.footer a {}
 
 .footer a, .footer a:visited, .footer {
     margin: var(--size-1) var(--size-3) var(--size-1) var(--size-1);

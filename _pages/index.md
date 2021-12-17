@@ -1,19 +1,18 @@
 ---
 layout: home
-title: A portfolio website for civic technologists.
-description: Civic Folio is a portfolio website for civic technologists.
+title: A portfolio website theme for civic technologists.
+description: Civic Folio is a portfolio website theme for civic technologists.
 about-title: About
 about-img: profile.png
 about-img-alt: Civic Folio
-about-description: Civic Folio is a portfolio website for civic technologists.
+about-description: Civic Folio is a portfolio website theme for civic technologists.
 about-link: /about/
-press-title: Press
-press-link: /press/
+cv-text: Resume
+cv-link: /resume
 work-title: Work
 work-link: /work/
+press-title: Press
+press-link: /press/
 posts-title: Posts
 posts-link: /posts
-cv-title: Resume
-cv-text: Civic Folio's resume
-cv-link: /resume
 ---

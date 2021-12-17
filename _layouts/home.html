@@ -13,30 +13,22 @@ layout: home
             </div>
         </div>
         <div class="row">
+            <div class="col-sm-8">
+                <p class="lead">{{ page.about-description }}</p>
+                <p>
+                    {% if page.about-link %}
+                    <a href="{{ page.about-link }}" class="btn btn-outline-primary btn-lg mr-2" role="button">{{ page.about-title }}</a>
+                    {% endif %}
+                    {% if page.cv-link %}
+                    <a href="{{ page.cv-link }}" class="btn btn-outline-secondary btn-lg" role="button">{{ page.cv-text }}</a>
+                    {% endif %}
+                </p>
+            </div>
             {% if page.about-img %}
             <div class="col-sm-4">
                 <img src="{{ site.baseurl }}/img/{{ page.about-img }}" alt="{{ page.about-img-alt }}" class="mb-4 rounded-circle">
             </div>
             {% endif %}
-            <div class="col-sm-8">
-                <p class="lead">{{ page.about-description }}</p>
-                <p>
-                    <a href="{{ page.about-link }}" class="btn btn-primary mt-4">{{ page.about-title }}</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    {% endif %}
-    {% if page.press-title %}
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>{{ page.press-title }}</h2>
-                {% include press.html limit=6 %}
-                <p>
-                    <a href="{{ page.press-link }}" class="btn btn-primary">{{ page.press-title }}</a>
-                </p>
-            </div>
         </div>
     </div>
     {% endif %}
@@ -51,66 +43,44 @@ layout: home
         <div class="row">
             <div class="col-sm-12">
                 <p>
-                    <a href="{{ page.work-link }}" class="btn btn-primary">{{ page.work-title }}</a>
+                    <a href="{{ page.work-link }}" class="btn btn-outline-primary btn-lg" role="button">{{ page.work-title }}</a>
                 </p>
             </div>
         </div>
     </div>
     {% endif %}
-    {% if page.cv-title %}
+    {% if page.press-title %}
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h2>{{ page.cv-title }}</h2>
+                <h2>{{ page.press-title }}</h2>
+                {% include press.html limit=6 %}
+                <p>
+                    <a href="{{ page.press-link }}" class="btn btn-outline-primary btn-lg" role="button">{{ page.press-title }}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% if page.posts-title %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>{{ page.posts-title }}</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12">
-                <div class="card-deck">
-                    <div class="card d-flex flex-row p-3">
-                        {% if page.cv-text %}
-                        <div class="p-2">
-                            <i class="far fa-file-alt fa-5x ml-3 mr-2"></i>
-                        </div>
-                        <div class="p-2">
-                            <p class="lead">
-                                <a href="{{ page.cv-link }}" class="dark stretched-link"></a>
-                                {{ page.cv-text }}
-                            </a>
-                        </p>
-                    </div>
-                    {% endif %}
-                </div>
+            <div class="col-12">
+                {% include posts.html limit=3 %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    <a href="{{ page.posts-link }}" class="btn btn-outline-primary btn-lg" role="button">{{ page.posts-title }}</a>
+                </p>
             </div>
         </div>
     </div>
-    {% if page.cv-link %}
-    <p>
-        <a href="{{ page.cv-link }}" class="btn btn-primary">{{ page.cv-title }}</a>
-    </p>
     {% endif %}
-</div>
-</div>
-{% endif %}
-    {% if page.posts-title %}
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h2>{{ page.posts-title }}</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            {% include posts.html limit=3 %}
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <p>
-                <a href="{{ page.posts-link }}" class="btn btn-primary">{{ page.posts-title }}</a>
-            </p>
-        </div>
-    </div>
-</div>
-{% endif %}
 {% include footer.html %}

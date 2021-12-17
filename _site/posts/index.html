@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="Sample page using the About layout template.">
+        <meta name="description" content="Sample page using the Posts layout template.">
         <meta name="author" content="">
         <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
@@ -49,10 +49,10 @@
         <meta property="og:image" content="/img/avatar.png">
         <meta property="og:image:height" content="630">
         <meta property="og:image:width" content="630">
-        <meta property="og:title" content="About">
-        <meta property="og:description" content="Sample page using the About layout template.">
-        <meta property="og:url" content="/about">
-        <title>About - Civic Folio</title>
+        <meta property="og:title" content="Posts">
+        <meta property="og:description" content="Sample page using the Posts layout template.">
+        <meta property="og:url" content="/posts/">
+        <title>Posts - Civic Folio</title>
         <!-- Bootstrap core JavaScript -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -73,7 +73,11 @@
         <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700;900&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Second font set -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
         <!--load all styles -->
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -118,7 +122,7 @@
                 
                 
                 
-                <a class="nav-item nav-link " href="/posts/">Posts</a>
+                <a class="nav-item nav-link active" href="/posts/">Posts</a>
                 
                 
                 
@@ -136,9 +140,9 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-9">
-                <h1 class="display-4">About</h1>
+                <h1 class="display-4">Posts</h1>
                 
-                <p class="lead">Sample page using the About layout template.</p>
+                <p class="lead">Sample page using the Posts layout template.</p>
                 
             </div>
             <div class="col-sm-3"></div>
@@ -149,27 +153,61 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-8">
-                <p>Civic Folio is a portfolio website for civic technologists.</p>
-
-<h2 id="who-its-for">Who it’s for</h2>
-
-<p>Civic Folio is for anyone, but it’s more focused on supporting civic designers and developers interested in building their portfolio websites while learning about open, collaborative tools and ways of working.</p>
-
-<h2 id="technology">Technology</h2>
-
-<p>Civic Folio is built using:</p>
-
-<ul>
-  <li>Jekyll</li>
-  <li>Bootstrap</li>
-  <li>Font Awesome</li>
-  <li>GitHub Pages</li>
-</ul>
-
+            <div class="col-sm-12">
+                <div class="card-deck">
+    
+    
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex align-items-stretch">
+        <div class="card">
+            <div class="card-body">
+                <h3>
+                    <a href="/posts/sample-post-3" class="stretched-link">
+                        Sample post 3
+                    </a>
+                </h3>
+                <p>
+                    <small>December, 16 2021</small>
+                </p>
+                <p class="card-text">The is the post description.</p>
             </div>
-            <div class="col-sm-4">
-                <img src="/img/profile.png" alt="Civic Folio" class="rounded-circle">
+        </div>
+    </div>
+    
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex align-items-stretch">
+        <div class="card">
+            <div class="card-body">
+                <h3>
+                    <a href="/posts/sample-post-2" class="stretched-link">
+                        Sample post 2
+                    </a>
+                </h3>
+                <p>
+                    <small>December, 16 2021</small>
+                </p>
+                <p class="card-text">The is the post description.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex align-items-stretch">
+        <div class="card">
+            <div class="card-body">
+                <h3>
+                    <a href="/posts/sample-post-1" class="stretched-link">
+                        Sample post 1
+                    </a>
+                </h3>
+                <p>
+                    <small>December, 16 2021</small>
+                </p>
+                <p class="card-text">The is the post description.</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
             </div>
         </div>
     </div>
@@ -179,9 +217,9 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-7">
+                <div class="col-7">
                     <p class="brand">Civic Folio</p>
-                    <p>A portfolio website for civic technologists.</p>
+                    <p>A portfolio website theme for civic technologists.</p>
                     <p>
                         
                         <a href="mailto:name@email.com" aria-label="Email">
@@ -235,7 +273,7 @@
                         
                     </p>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-5">
                     <ul class="list-unstyled">
                         
                         

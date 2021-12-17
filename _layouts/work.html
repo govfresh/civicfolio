@@ -7,10 +7,31 @@ layout: work
     {% include jumbotron.html %}
     <div class="container">
         <div class="row">
-            <div class="col-sm-7">
+            <div class="col-sm-8">
                 {{ content | markdownify }}
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                {% if page.methods %}
+            {% if post %}
+            {% assign methods = post.methods %}
+            {% else %}
+            {% assign methods = page.methods %}
+            {% endif %}
+                <h2>Methods</h2>
+                <ul>
+                    {% for method in methods %}
+                    <li>
+                        {{ method }}
+                    </li>
+                    {% unless forloop.last %}{% endunless %}
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            <div class="col-sm-6">
                 {% if page.tools %}
                 {% if post %}
                 {% assign tools = post.tools %}
