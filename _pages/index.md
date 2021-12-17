@@ -7,7 +7,7 @@ about-img: profile.png
 about-img-alt: Civic Folio
 about-description: Civic Folio is a portfolio website theme for civic technologists.
 about-link: /about/
-cv-text: Resume
+cv-text: Resumé
 cv-link: /resume
 work-title: Work
 work-link: /work/

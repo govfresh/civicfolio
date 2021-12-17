@@ -56,7 +56,7 @@ a.dark, a.dark:visited {
 
 /* Headers */
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
     color: var(--color-2);
     font-family: var(--font-1) !important;
     font-weight: var(--weight-3);
@@ -105,18 +105,20 @@ a.navbar-brand:hover {
     font-weight: var(--weight-2) !important;
 }
 
-.lead {
-    color: var(--color-2);
-    font-family: var(--font-2);
-    font-size: var(--size-10);
-    font-weight: var(--weight-1);
+.navbar li a:hover {
+    text-decoration: underline !important;
 }
 
 /* Images */
 
+figcaption {
+    padding-bottom: var(--size-3);
+    padding-top: var(--size-3);
+}
+
 img {
     height: auto;
-    max-width: 100%;
+    width: 100%;
 }
 
 img.md {
@@ -151,12 +153,21 @@ img.lg {
 
 .jumbotron {
     background: var(--color-4);
-    border-bottom: var(--size-13) solid var(--color-3);
+    border-bottom: var(--size-13) solid var(--color-4);
     border-radius: var(--color-1);
+    padding: var(--size-6) var(--size-1);
+    margin: var(--size-1);
 }
 
 .jumbotron h1, .jumbotron {
     color: var(--color-2);
+}
+
+.lead {
+    color: var(--color-2);
+    font-family: var(--font-2);
+    font-size: var(--size-10);
+    font-weight: var(--weight-1);
 }
 
 /* Main */
@@ -252,10 +263,14 @@ a.btn-outline-secondary:hover {
     padding: var(--size-1) var(--size-1) var(--size-7) var(--size-1);
 }
 
-.footer a {}
+.footer .connect a, .footer .connect a:visited, .footer .connect a:hover {
+    margin-right: var(--size-3);
+    padding: var(--size-1);
+    text-decoration: none;
+}
 
-.footer a, .footer a:visited, .footer {
-    margin: var(--size-1) var(--size-3) var(--size-1) var(--size-1);
+.footer a:hover {
+    text-decoration: underline;
 }
 
 .footer a, .footer a:visited, .footer {

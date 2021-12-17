@@ -11,10 +11,10 @@
                         {{ post.title }}
                     </a>
                 </h3>
-                <p>
-                    <small>{{ post.date | date: "%B, %-d %Y"}}</small>
-                </p>
                 <p class="card-text">{{ post.description }}</p>
+                <p>
+                    <small>{{ page.date | date: site.date }}</small>
+                </p>
             </div>
         </div>
     </div>

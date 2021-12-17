@@ -51,5 +51,42 @@ layout: work
             </div>
         </div>
     </div>
+    <div class="container">
+        {% if page.samples-title %}
+        <div class="row">
+            <div class="col-12">
+                <h2>{{ page.samples-title }}</h2>
+            </div>
+        </div>
+        {% endif %}
+        <div class="row">
+            <div class="col-sm-6">
+                <figure>
+                    <img src="{{ site.baseurl }}/img/work/{{ page.sample-img-1 }}" alt="{{ page.sample-img-alt-1 }}">
+                    <figcaption>{{ page.sample-img-caption-1 }}</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6">
+                <figure>
+                    <img src="{{ site.baseurl }}/img/work/{{ page.sample-img-2 }}" alt="{{ page.sample-img-alt-2 }}">
+                    <figcaption>{{ page.sample-img-caption-2 }}</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <figure>
+                    <img src="{{ site.baseurl }}/img/work/{{ page.sample-img-3 }}" alt="{{ page.sample-img-alt-1 }}">
+                    <figcaption>{{ page.sample-img-caption-3 }}</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6">
+                <figure>
+                    <img src="{{ site.baseurl }}/img/work/{{ page.sample-img-4 }}" alt="{{ page.sample-img-alt-2 }}">
+                    <figcaption>{{ page.sample-img-caption-4 }}</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
 </main>
 {% include footer.html %}
