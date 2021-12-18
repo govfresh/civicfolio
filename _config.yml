@@ -1,19 +1,19 @@
 # General
-title: Civic Folio
-description: "A portfolio website theme for civic technologists."
+title: Luke Fretwell
+description: "Democracy and open, accessible technology."
 avatar: avatar.jpg
 
 # Social media
-email: mailto:name@email.com
-calendar: /calendar
-linkedin: https://linkedin.com
-twitter: https://twitter.com
-medium: https://medium.com
-figma: https://figma.com
-github: https://github.com
-facebook: https://facebook.com
-instagram: https://instagram.com
-rss: /rss
+email: mailto:luke@lukefretwell.com
+calendar: https://lukefretwell/calendar/
+linkedin: https://www.linkedin.com/in/lukefretwell
+twitter: https://twitter.com/lukefretwell
+medium: 
+figma: 
+github: https://github.com/lukefretwell
+facebook: 
+instagram: 
+rss: https://lukefretwell.com/feed.xml 
 
 # Build settings
 markdown: kramdown

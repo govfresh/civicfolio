@@ -1,6 +1,6 @@
 ---
 title: Press
-description: Sample page using the Press layout template.
+description: News mentions, commentary.
 layout: press
 permalink: /press/
 ---

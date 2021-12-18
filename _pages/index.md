@@ -1,18 +1,18 @@
 ---
 layout: home
-title: A portfolio website theme for civic technologists.
-description: Civic Folio is a portfolio website theme for civic technologists.
+title: Democracy and open, accessible technology.
+description: Luke Fretwell is an entrepreneur and writer focused on the intersection of democracy and technology.
 about-title: About
 about-img: profile.png
-about-img-alt: Civic Folio
-about-description: Civic Folio is a portfolio website theme for civic technologists.
+about-img-alt: Luke Fretwell
+about-description: Luke Fretwell is an entrepreneur and writer focused on the intersection of democracy and technology.
 about-link: /about/
-cv-text: Resumé
-cv-link: /resume
-work-title: Work
-work-link: /work/
+cv-text: #Resumé
+cv-link: #/resume
+work-title: #Work
+work-link: #/work/
 press-title: Press
 press-link: /press/
-posts-title: Posts
-posts-link: /posts
+posts-title: #Posts
+posts-link: #/posts
 ---

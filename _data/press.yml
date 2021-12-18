@@ -1,15 +1,186 @@
 docs_list_title: press
 docs:
 
-- title: "Headline of a press article"
-  url: https://govfresh.com
-  source: Source name
+- title: "What we learned about accessibility by scanning more than 2 million federal .gov web pages"
+  url: https://fcw.com/articles/2021/07/22/fed-website-accessibility.aspx
+  source: FCW
 
-- title: "Headline of a press article"
-  url: https://govfresh.com
-  source: Source name
+- title: "ProudCity Turns to Partners to Unbundle Web Tech, Service"
+  url: https://www.govtech.com/biz/proudcity-turns-to-partners-to-unbundle-web-tech-service
+  source: Government Technology
 
-- title: "Headline of a press article"
-  url: https://govfresh.com
-  source: Source name
+- title: "How Will Biden Transform Government Website Accessibility?"
+  url: https://www.govtech.com/opinion/How-Will-Biden-Transform-Government-Website-Accessibility.html
+  source: Government Technology
 
+- title: "The need for accessibility compliance as code"
+  url: https://gcn.com/articles/2021/02/04/accessibility-compliance-as-code.aspx
+  source: GCN
+
+- title: "Expectation versus Reality of Five Years in Gov Tech"
+  url: https://www.govtech.com/biz/Expectation-versus-Reality-of-Five-Years-in-Gov-Tech.html
+  source: Government Technology
+
+- title: "State Website Redesign Could Influence Other Departments, Processes"
+  url: https://www.techwire.net/news/state-website-redesign-could-influence-other-departments-processes.html
+  source: TechWire
+
+- title: "California’s Alpha Team Takes on Real-Time .Gov Redesign"
+  url: https://www.govtech.com/gov-experience/Californias-Alpha-Team-Takes-on-Real-Time-Gov-Redesign.html
+  source: Government Technology
+
+- title: "Shrinking Government Too Much Risks Smaller Talent Pool"
+  url: https://www.techwire.net/news/commentary-shrinking-government-too-much-risks-smaller-talent-pool.html
+  source: TechWire
+
+- title: "Engagement Is Unlocking DMV's Web Services"
+  url: https://www.techwire.net/news/commentary-engagement-is-unlocking-dmvs-web-services.html
+  source: TechWire
+
+- title: "In a Disaster, Don't Forget About Digital First Responders"
+  url: https://www.techwire.net/news/in-a-disaster-dont-forget-about-digital-first-responders.html
+  source: TechWire
+
+- title: "DMV Revamp Effort Becoming a Vehicle for Civic Tech Collaboration"
+  url: https://www.techwire.net/news/dmv-revamp-effort-becoming-a-vehicle-for-civic-tech-collaboration.html
+  source: TechWire
+
+- title: "Partnering, Planning, Tech Among Ways Government Can Survive Major Disaster"
+  url: https://www.techwire.net/news/partnering-planning-tech-among-ways-government-can-survive-major-disaster.html
+  source: TechWire
+
+- title: "Grassroots Effort Works to Re-Imagine Solutions for DMV"
+  url: https://www.techwire.net/news/commentary-grassroots-effort-works-for-re-imagine-solutions-for-dmv.html
+  source: TechWire
+
+- title: "ProudCity Debuts Disaster Recovery Web Package for Government"
+  url: https://www.techwire.net/news/proudcity-debuts-online.html
+  source: TechWire
+
+- title: "ProudCity Aims to Build More Disaster Recovery Websites"
+  url: https://www.govtech.com/biz/ProudCity-Aims-to-Build-More-Disaster-Recovery-Websites.html
+  source: Government Technology
+
+- title: "High Aspirations and Expectations for 'Golden State Dot-Gov' "
+  url: https://www.techwire.net/news/commentary-high-aspirations-expectations-for-golden-state-dot-gov.html
+  source: TechWire
+
+- title: "Some Constructive Ideas About Re-Imagining the DMV"
+  url: https://www.techwire.net/news/honing-a-prototype-for-dmv-website-ux.html
+  source: TechWire
+
+- title: "ProudCity Launches One-Click Pricing Tool for City Websites"
+  url: https://www.govtech.com/biz/ProudCity-Launches-One-Click-Pricing-Tool-for-City-Websites.html
+  source: Government Technology
+
+- title: "Solutions for DMV Woes Can Be Found Online and Offline"
+  url: https://www.techwire.net/news/commentary-solutions-for-dmv-woes-can-be-found-online-and-offline.html
+  source: TechWire
+
+- title: "ProudCity Aims to Build More Disaster Recovery Websites"
+  url: https://www.govtech.com/biz/ProudCitys-New-Meetings-Tool-Aims-to-Help-Small-Governments.html
+  source: Government Technology
+
+- title: "IT Firm Filling Web Needs After Paradise Wildfire"
+  url: https://www.techwire.net/news/it-firm-filling-web-needs-after-paradise-wildfire.html
+  source: TechWire
+
+- title: "ProudCity Builds Recovery Website for Paradise, Calif., in 3 Days"
+  url: https://www.govtech.com/biz/ProudCity-Builds-Recovery-Website-for-Paradise-Calif-in-3-Days.html
+  source: Government Technology
+
+- title: "As Google's Deadline for Web Encryption Looms, Many State and Local Websites Don't Meet the Standard"
+  url: https://www.govtech.com/As-Googles-Deadline-for-Web-Encryption-Looms-Many-State-and-Local-Websites-Dont-Meet-the-Standard.html
+  source: Government Technology
+
+- title: "How to be smart about open source"
+  url: https://gcn.com/articles/2017/06/30/5-strategies-open-source.aspx
+  source: GCN
+
+- title: "ProudCity Offers Free Websites to Small Cities, Builds API for Digital Benchmarking"
+  url: https://www.govtech.com/biz/ProudCity-Offers-Free-Websites-to-Small-Cities-Builds-API-for-Digital-Benchmarking.html
+  source: Government Technology
+
+- title: "With open data, the plan is as important as the portal"
+  url: https://gcn.com/articles/2017/12/15/open-data-plans-portals.aspx
+  source: GCN
+
+- title: "Oracle's Federal IT Modernization Comments Draw Fire from Tech Industry"
+  url: https://www.govtech.com/Oracles-Federal-IT-Modernization-Comments-Draw-Fire-from-Tech-Industry.html
+  source: Government Technology
+
+- title: "ProudCity Offers Free Websites to Small Cities, Builds API for Digital Benchmarking"
+  url: https://www.govtech.com/biz/ProudCity-Offers-Free-Websites-to-Small-Cities-Builds-API-for-Digital-Benchmarking.html
+  source: Government Technology
+
+- title: "New Facebook-powered tool delivers city services, expands civic inclusion"
+  url: https://statescoop.com/new-tool-pipes-city-services-into-facebook/
+  source: StateScoop
+
+- title: "Why We’re at a Pivotal Moment with Gov Tech Infrastructure"
+  url: https://www.govtech.com/civic/Why-Were-at-a-Pivotal-Moment-Gov-Tech-Infrastructure-Industry-Perspective.html
+  source: Government Technology
+
+- title: "The government technology pitch"
+  url: https://techcrunch.com/2016/09/18/the-government-technology-pitch/
+  source: TechCrunch
+
+- title: "Building ProudCity as an open organization"
+  url: https://opensource.com/open-organization/16/5/why-we-built-proudcity-open-organization
+  source: Opensource.com
+
+- title: "Startup releases open source code for city government sites"
+  url: https://statescoop.com/city-government-web-development-startup-releases-open-source-code/
+  source: StateScoop
+
+- title: "Startup Looks to Modernize City Websites"
+  url: https://www.govtech.com/Startup-Looks-to-Modernize-City-Websites.html?flipboard=yes
+  source: Government Technology
+
+- title: "Startup offers city websites as a service"
+  url: https://gcn.com/articles/2016/01/22/proudcity-website-service.aspx
+  source: GCN
+
+- title: "4 actions California must take before launching a digital services team"
+  url: https://statescoop.com/commentary-4-actions-california-must-take-before-launching-a-digital-services-team/
+  source: StateScoop
+
+- title: "Now you can help fix USASpending.gov"
+  url: https://gcn.com/articles/2015/04/09/usaspending-comments.aspx
+  source: GCN
+
+- title: "Is government ready for agile?"
+  url: https://fcw.com/articles/2015/02/13/agile-handbook.aspx
+  source: FCW
+
+- title: "4 Cities Jumpstart Civic Tech Solutions with CityCamp"
+  url: https://www.govtech.com/dc/articles/4-Cities-Jumpstart-Civic-Tech-Solutions-with-CityCamp.html
+  source: Government Technology
+
+- title: "Picking up the open-gov torch"
+  url: https://fcw.com/articles/2014/10/27/picking-up-the-open-gov-torch.aspx
+  source: FCW
+
+- title: "With appointment after appointment, Google’s ideas are taking hold in D.C."
+  url: https://www.washingtonpost.com/news/the-switch/wp/2014/10/17/with-appointment-after-appointment-googles-ideas-are-taking-hold-in-d-c/
+  source: The Washington Post
+
+- title: "Interior gets green light for Drupal consolidation initiative"
+  url: https://fcw.com/articles/2014/07/17/interior-drupal-initiative.aspx
+  source: FCW
+
+- title: "GitHub: A Swiss Army knife for open government"
+  url: https://fcw.com/articles/2014/07/07/github-swiss-army-knife.aspx
+  source: FCW
+
+- title: "A brief history of open data"
+  url: https://fcw.com/articles/2014/06/09/exec-tech-brief-history-of-open-data.aspx
+  source: FCW
+
+- title: "National Day of Civic Hacking: Opportunities in Civic Engagement"
+  url: https://www.govtech.com/data/National-Day-of-Civic-Hacking-Opportunities-in-Civic-Engagement.html
+  source: Government Technology
+
+- title: "How CityCamp became an open source brand"
+  url: https://opensource.com/government/11/5/how-citycamp-became-open-source-brand
+  source: Opensource.com

@@ -1,6 +1,6 @@
 ---
 title: Connect
-description: Sample page using the Connect layout template.
+description: Connect with Luke.
 layout: connect
 permalink: /connect/
 ---
