@@ -1,15 +1,10 @@
 # .github/release.yml
 
 changelog:
-  exclude:
-    labels:
-    authors:
-      - lukefretwell
   categories:
-    - title: Breaking Changes 🛠
+    - title: New features 🎉
       labels:
-        - release
-    - title: Exciting New Features 🎉
+    - title: Bug fixes 🐛
       labels:
     - title: Other Changes
       labels:
