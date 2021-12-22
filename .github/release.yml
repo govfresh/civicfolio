@@ -3,18 +3,14 @@
 changelog:
   exclude:
     labels:
-      - 
     authors:
       - lukefretwell
   categories:
     - title: Breaking Changes 🛠
       labels:
-        - 
-        - 
+        - release
     - title: Exciting New Features 🎉
       labels:
-        - 
-        - 
     - title: Other Changes
       labels:
         - "*"
