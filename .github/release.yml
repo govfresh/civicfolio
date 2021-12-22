@@ -3,9 +3,5 @@
 changelog:
   categories:
     - title: New features 🎉
-      labels:
     - title: Bug fixes 🐛
-      labels:
-    - title: Other Changes
-      labels:
-        - "*"
+    - title: Other changes
