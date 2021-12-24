@@ -1,0 +1,20 @@
+docs_list_title: nav
+docs:
+
+- title: About
+  url: /about/
+
+- title: Work
+  url: /work/
+
+- title: Press
+  url: /press/
+
+- title: Resumé
+  url: /resume/
+
+- title: Posts
+  url: /posts/
+
+- title: Connect
+  url: /connect/

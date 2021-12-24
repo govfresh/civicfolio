@@ -1,24 +1,22 @@
-<ul class="usa-card-group">
+<div class="card-deck">
     {% if include.limit %}
         {% assign limitVar = include.limit | plus: 0 %}
-        {% else %}
-        {% assign limitVar = site.posts.size %}
     {% endif %}
     {% for post in site.posts limit:limitVar %}
-    <li class="tablet:grid-col-4 usa-card">
-        <div class="usa-card__container">
-            <header class="usa-card__header">
-                <h3 class="usa-card__heading">
-                    <a href="{{ site.baseurl }}{{ post.url }}">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex align-items-stretch">
+        <div class="card">
+            <div class="card-body">
+                <h3>
+                    <a href="{{ site.baseurl }}{{ post.url }}" class="stretched-link">
                         {{ post.title }}
                     </a>
                 </h3>
-            </header>
-            <div class="usa-card__body">
-                <p>{{ post.description }}</p>
-                <p>{{ page.date | date: site.date }}</p>
+                <p class="card-text">{{ post.description }}</p>
+                <p>
+                    <small>{{ page.date | date: site.date }}</small>
+                </p>
             </div>
         </div>
-    </li>
+    </div>
     {% endfor %}
-</ul>
+</div>

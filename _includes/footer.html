@@ -1,135 +1,79 @@
 {% include analytics.html %}
-<footer class="usa-footer">
-    <div class="grid-container usa-footer__return-to-top">
-        <a href="#">Return to top</a>
-    </div>
-    <div class="usa-footer__primary-section">
-        <nav class="usa-footer__nav" aria-label="Footer navigation">
-            <ul class="grid-row grid-gap">
-                {% assign footer_links = site.data.navigation.footer %}
-                    {% for item in footer_links %}
-                    {% if item.href %}
-                <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content pb-2">
-                    <a class="usa-footer__primary-link" href="{{ site.baseurl }}{{ item.href }}">{{ item.text }}</a>
-                </li>
-                {% endif %}
-                    {% endfor %}
-            </ul>
-        </nav>
-    </div>
-    <div class="usa-footer__secondary-section">
-        <div class="grid-container">
-            <div class="grid-row grid-gap">
-                <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
-                    <div class="mobile-lg:grid-col-auto">
-                        <p class="usa-footer__logo-heading">{{ site.title }}</p>
-                        <p>{{ site.description }}</p>
-                    </div>
-                </div>
-                <div class="usa-footer__contact-links mobile-lg:grid-col-6">
-                    <div class="usa-footer__social-links grid-row grid-gap-1">
-                        {% if site.email %}
-                        <div class="grid-col-auto">
-                            <a href="{{ site.email }}" aria-label="Email" class=" usa-social-link">
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <p class="brand">{{ site.title }}</p>
+                    <p>{{ site.description }}</p>
+                    <div class="connect">
+                        <p>
+                            {% if site.email %}
+                            <a href="{{ site.email }}" aria-label="Email">
                                 <i class="fas fa-at fa-lg"></i>
                             </a>
-                        </div>
-                        {% endif %}
-                            {% if site.calendar %}
-                        <div class="grid-col-auto">
-                            <a href="{{ site.calendar }}" aria-label="Calendar" class=" usa-social-link">
+                            {% endif %}
+                        {% if site.calendar %}
+                            <a href="{{ site.calendar }}" aria-label="Calendar">
                                 <i class="fas fa-calendar fa-lg"></i>
                             </a>
-                        </div>
-                        {% endif %}
+                            {% endif %}
                         {% if site.linkedin %}
-                        <div class="grid-col-auto">
-                            <a href="{{ site.linkedin }}" aria-label="LinkedIn" class=" usa-social-link">
+                            <a href="{{ site.linkedin }}" aria-label="LinkedIn">
                                 <i class="fab fa-linkedin fa-lg"></i>
                             </a>
-                        </div>
-                        {% endif %}
+                            {% endif %}
                         {% if site.twitter %}
-                        <div class="grid-col-auto">
-                            <a href="{{ site.twitter }}" aria-label="Twitter" class=" usa-social-link">
+                            <a href="{{ site.twitter }}" aria-label="Twitter">
                                 <i class="fab fa-twitter fa-lg"></i>
                             </a>
-                        </div>
-                        {% endif %}
+                            {% endif %}
                         {% if site.medium %}
-                        <div class="grid-col-auto">
-                            <a href="{{ site.medium }}" aria-label="Medium" class=" usa-social-link">
+                            <a href="{{ site.medium }}" aria-label="Medium">
                                 <i class="fab fa-medium fa-lg"></i>
                             </a>
-                        </div>
-                        {% endif %}
+                            {% endif %}
                         {% if site.figma %}
-                        <div class="grid-col-auto">
-                            <a href="{{ site.figma }}" aria-label="Figma" class=" usa-social-link">
+                            <a href="{{ site.figma }}" aria-label="Figma">
                                 <i class="fab fa-figma fa-lg"></i>
                             </a>
-                        </div>
-                        {% endif %}
+                            {% endif %}
                         {% if site.github %}
-                        <div class="grid-col-auto">
-                            <a href="{{ site.github }}" aria-label="GitHub" class=" usa-social-link">
+                            <a href="{{ site.github }}" aria-label="GitHub">
                                 <i class="fab fa-github fa-lg"></i>
                             </a>
-                        </div>
-                        {% endif %}
+                            {% endif %}
                         {% if site.facebook %}
-                        <div class="grid-col-auto">
-                            <a href="{{ site.facebook }}" aria-label="Facebook" class=" usa-social-link">
+                            <a href="{{ site.facebook }}" aria-label="Facebook">
                                 <i class="fab fa-facebook fa-lg"></i>
                             </a>
-                        </div>
-                        {% endif %}
+                            {% endif %}
                         {% if site.instagram %}
-                        <div class="grid-col-auto">
-                            <a href="{{ site.instagram }}" aria-label="Instagram" class=" usa-social-link">
+                            <a href="{{ site.instagram }}" aria-label="Instagram">
                                 <i class="fab fa-instagram fa-lg"></i>
                             </a>
-                        </div>
-                        {% endif %}
+                            {% endif %}
                         {% if site.rss %}
-                        <div class="grid-col-auto">
-                            <a href="{{ site.rss }}" aria-label="RSS" class=" usa-social-link">
+                            <a href="{{ site.rss }}" aria-label="RSS">
                                 <i class="fas fa-rss fa-lg"></i>
                             </a>
-                        </div>
-                        {% endif %}
-                        <!--
-                        <div class="grid-col-auto">
-                            <a class="usa-social-link" href="javascript:void(0);">
-                                <img class="usa-social-link__icon" src="/assets/img/usa-icons/facebook.svg" alt="Facebook">
-                            </a>
-                        </div>
-                        <div class="grid-col-auto">
-                            <a class="usa-social-link" href="javascript:void(0);">
-                                <img class="usa-social-link__icon" src="/assets/img/usa-icons/twitter.svg" alt="Twitter">
-                            </a>
-                        </div>
-                        <div class="grid-col-auto">
-                            <a class="usa-social-link" href="javascript:void(0);">
-                                <img class="usa-social-link__icon" src="/assets/img/usa-icons/youtube.svg" alt="YouTube">
-                            </a>
-                        </div>
-                        <div class="grid-col-auto">
-                            <a class="usa-social-link" href="javascript:void(0);">
-                                <img class="usa-social-link__icon" src="/assets/img/usa-icons/instagram.svg" alt="Instagram">
-                            </a>
-                        </div>
-                        <div class="grid-col-auto">
-                            <a class="usa-social-link" href="javascript:void(0);">
-                                <img class="usa-social-link__icon" src="/assets/img/usa-icons/rss_feed.svg" alt="RSS">
-                            </a>
-                        </div>
-                    -->
+                            {% endif %}
+                        </p>
                     </div>
+                </div>
+                <div class="col-5">
+                    <ul class="list-unstyled">
+                        {% for item in site.data.nav.docs %}
+                        {% if item.url %}
+                        <li>
+                            <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>

@@ -1,25 +1,19 @@
-<ul class="usa-card-group">
+<div class="card-deck">
     {% for page in site.work limit:limitVar %}
-    <li class="tablet:grid-col-4 usa-card">
-        <div class="usa-card__container">
-            {% if page.img-feat %}
-            <div class="usa-card__media">
-                <div class="usa-card__img">
-                    <img src="{{ site.baseurl }}/assets/img/work/{{ page.img-feat }}" alt="{{ page.img-alt }}" class="card-img-top mb-4 lg">
-                </div>
-            </div>
-            {% endif %}
-            <header class="usa-card__header">
-                <h3 class="usa-card__heading">
-                    <a href="{{ site.baseurl }}{{ page.url }}">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex align-items-stretch">
+        <div class="card">
+            <div class="card-body">
+                {% if page.img-feat %}
+                <img src="{{ site.baseurl }}/img/work/{{ page.img-feat }}" alt="{{ page.img-alt }}" class="card-img-top mb-4 lg">
+                {% endif %}
+                <h3>
+                    <a href="{{ site.baseurl }}{{ page.url }}" class="stretched-link">
                         {{ page.title }}
                     </a>
                 </h3>
-            </header>
-            <div class="usa-card__body">
-                <p>{{ page.description }}</p>
+                <p class="card-text">{{ page.description }}</p>
             </div>
         </div>
-    </li>
+    </div>
     {% endfor %}
-</ul>
+</div>

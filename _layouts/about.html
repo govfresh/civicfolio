@@ -2,15 +2,16 @@
 layout: about
 ---
 {% include header.html %}
+{% include nav.html %}
 <main>
-    {% include hero.html %}
-    <div class="grid-container">
-        <div class="grid-row grid-gap">
-            <div class="grid-col-8">
+    {% include jumbotron.html %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
                 {{ content }}
             </div>
-            <div class="grid-col-4">
-                <img src="{{ site.baseurl }}/assets/img/profile.png" alt="{{ site.title }}" class="margin-bottom-4 radius-top-pill radius-bottom-pill">
+            <div class="col-sm-4">
+                <img src="{{ site.baseurl }}/img/profile.png" alt="{{ site.title }}" class="rounded-circle">
             </div>
         </div>
     </div>

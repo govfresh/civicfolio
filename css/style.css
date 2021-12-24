@@ -1,0 +1,278 @@
+:root {
+    --color-1: #0076d6;
+    --color-2: #212121;
+    --color-3: #c9c9c9;
+    --color-4: #ffffff;
+    --color-5: #54278f;
+    --color-6: #f1f1f1;
+    /* Accent font */
+    --font-1: 'Playfair Display', serif;
+    /* Secondary font */
+    --font-2: 'Open Sans', sans-serif;
+    --weight-1: 400;
+    --weight-2: 400;
+    --weight-3: 700;
+    --size-1: 0;
+    --size-2: .5rem;
+    --size-3: 1rem;
+    --size-4: 1.2rem;
+    --size-5: 2rem;
+    --size-6: 3rem;
+    --size-7: .25rem;
+    --size-8: .625rem;
+    --size-9: 4.675rem;
+    --size-10: 1.5625rem;
+    --size-11: 12.5rem;
+    --size-12: 18.75rem;
+    --size-13: 0.0625rem;
+    --size-14: 15rem;
+    --size-15: 10rem;
+    --size-16: 20rem;
+}
+
+/* General */
+
+body {
+    color: var(--color-2);
+    font-family: var(--font-2);
+    font-size: var(--size-4);
+    font-weight: var(--weight-1);
+}
+
+/* Links */
+
+a, a:visited, a:hover {
+    color: var(--color-1);
+}
+
+a:visited {
+    color: var(--color-5);
+}
+
+a.dark, a.dark:visited {
+    color: var(--color-2);
+    text-decoration: none;
+}
+
+/* Headers */
+
+h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+    color: var(--color-2);
+    font-family: var(--font-1) !important;
+    font-weight: var(--weight-3);
+}
+
+/* Lists */
+
+ul.list-unstyled li {
+    padding-bottom: var(--size-3);
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--color-4) !important;
+    border-radius: var(--size-1);
+    border-bottom: var(--size-13) solid var(--color-2);
+}
+
+.navbar-brand, .brand {
+    font-family: var(--font-1);
+    font-weight: var(--weight-3) !important;
+}
+
+a.navbar-brand:hover {
+    background: none;
+}
+
+.brand {
+    font-size: var(--size-4);
+}
+
+.navbar-light .navbar-toggler {
+    color: var(--color-4);
+    border-color: var(--color-4);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    font-family: var(--font-1);
+}
+
+.navbar li a, .navbar li.active a, .navbar li.active a:visited, a.nav-link, a.nav-item {
+    color: var(--color-2) !important;
+    font-family: var(--font-2);
+    font-weight: var(--weight-2) !important;
+}
+
+.navbar li a:hover {
+    text-decoration: underline !important;
+}
+
+/* Images */
+
+figcaption {
+    padding-bottom: var(--size-3);
+    padding-top: var(--size-3);
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+img.md {
+    max-width: var(--size-15);
+}
+
+img.lg {
+    max-width: var(--size-16);
+}
+
+/* Cards */
+
+.card-deck .col, .card-deck .col-1, .card-deck .col-10, .card-deck .col-11, .card-deck .col-12, .card-deck .col-2, .card-deck .col-3, .card-deck .col-4, .card-deck .col-5, .card-deck .col-6, .card-deck .col-7, .card-deck .col-8, .card-deck .col-9, .card-deck .col-auto, .card-deck .col-lg, .card-deck .col-lg-1, .card-deck .col-lg-10, .card-deck .col-lg-11, .card-deck .col-lg-12, .card-deck .col-lg-2, .card-deck .col-lg-3, .card-deck .col-lg-4, .card-deck .col-lg-5, .card-deck .col-lg-6, .card-deck .col-lg-7, .card-deck .col-lg-8, .card-deck .col-lg-9, .card-deck .col-lg-auto, .card-deck .col-md, .card-deck .col-md-1, .card-deck .col-md-10, .card-deck .col-md-11, .card-deck .col-md-12, .card-deck .col-md-2, .card-deck .col-md-3, .card-deck .col-md-4, .card-deck .col-md-5, .card-deck .col-md-6, .card-deck .col-md-7, .card-deck .col-md-8, .card-deck .col-md-9, .card-deck .col-md-auto, .card-deck .col-sm, .card-deck .col-sm-1, .card-deck .col-sm-10, .card-deck .col-sm-11, .card-deck .col-sm-12, .card-deck .col-sm-2, .card-deck .col-sm-3, .card-deck .col-sm-4, .card-deck .col-sm-5, .card-deck .col-sm-6, .card-deck .col-sm-7, .card-deck .col-sm-8, .card-deck .col-sm-9, .card-deck .col-sm-auto, .card-deck .col-xl, .card-deck .col-xl-1, .card-deck .col-xl-10, .card-deck .col-xl-11, .card-deck .col-xl-12, .card-deck .col-xl-2, .card-deck .col-xl-3, .card-deck .col-xl-4, .card-deck .col-xl-5, .card-deck .col-xl-6, .card-deck .col-xl-7, .card-deck .col-xl-8, .card-deck .col-xl-9, .card-deck .col-xl-auto {
+    padding-left: var(--color-1) !important;
+    padding-right: var(--color-1) !important;
+}
+
+.card {
+    margin-bottom: var(--size-3) !important;
+}
+
+.card a {
+    color: var(--color-2);
+    text-decoration: none;
+}
+
+.card:hover {
+    background-color: var(--color-6);
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    background: var(--color-4);
+    border-bottom: var(--size-13) solid var(--color-4);
+    border-radius: var(--color-1);
+    padding: var(--size-6) var(--size-1);
+    margin: var(--size-1);
+}
+
+.jumbotron h1, .jumbotron {
+    color: var(--color-2);
+}
+
+.lead {
+    color: var(--color-2);
+    font-family: var(--font-2);
+    font-size: var(--size-10);
+    font-weight: var(--weight-1);
+}
+
+/* Main */
+
+main h2 {
+    padding: var(--size-4) var(--size-1);
+}
+
+main .container {
+    padding-bottom: var(--size-3);
+    padding-top: var(--size-3);
+}
+
+main a, main a:visited {
+    text-decoration: underline;
+}
+
+main a:hover {
+    text-decoration: none;
+}
+
+blockquote {
+    border-left: var(--size-7) solid var(--color-1);
+    margin-left: var(--size-5);
+    padding-left: var(--size-5);
+    padding-right: var(--size-5);
+    margin-bottom: var(--size-5);
+    margin-top: var(--size-5);
+}
+
+/* Pagination */
+
+.pagination li.page-item {
+    font-family: var(--font-1);
+    font-size: var(--size-3);
+}
+
+.page-item.active .page-link {
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+}
+
+.pagination a {
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+/* Buttons */
+
+a.btn {
+    margin-top: var(--size-3);
+    text-decoration: none;
+}
+
+a.btn-outline-primary, a.btn-outline-primary:visited {
+    color: var(--color-2);
+    border-color: var(--color-2);
+}
+
+a.btn-outline-primary:hover {
+    background-color: var(--color-2);
+    border-color: var(--color-2);
+    color: var(--color-4);
+}
+
+a.btn-outline-secondary, a.btn-outline-secondary:visited {
+    border-color: var(--color-1);
+    color: var(--color-1);
+}
+
+a.btn-outline-secondary:hover {
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+    color: var(--color-4);
+}
+
+/* Footer */
+
+.footer {
+    margin: var(--size-5) var(--size-1) var(--size-1) var(--size-1) !important;
+    padding: var(--size-5) var(--size-1);
+    border-top: var(--size-13) solid var(--color-2);
+    font-size: var(--size-3);
+}
+
+.footer p {
+    margin: var(--size-1);
+    padding: var(--size-2) var(--size-1);
+}
+
+.footer ul.list-unstyled li {
+    margin: var(--size-1);
+    padding: var(--size-1) var(--size-1) var(--size-7) var(--size-1);
+}
+
+.footer .connect a, .footer .connect a:visited, .footer .connect a:hover {
+    margin-right: var(--size-3);
+    padding: var(--size-1);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer a, .footer a:visited, .footer {
+    color: var(--color-2);
+}
