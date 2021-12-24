@@ -1,0 +1,10 @@
+# This is the configuration for the site identifier.
+
+# Primary language [en/es]
+lang: en
+masthead:
+  # Parent agency
+  parent:
+    name:
+      en: "Civic Folio"
+      es: "[Parent agency]"

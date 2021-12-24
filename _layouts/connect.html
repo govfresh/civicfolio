@@ -1,10 +1,10 @@
 ---
 layout: wrapper
 ---
-<div class="card-deck text-center connect">
+<ul class="usa-card-group">
     {% if site.email %}
-    <div class="col-3">
-        <div class="card">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
             <div class="card-body">
                 <p>
                     <a href="{{ site.email }}" class="stretched-link">
@@ -14,11 +14,11 @@ layout: wrapper
                 <p class="card-title">Email</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.calendar %}
-    <div class="col-3">
-        <div class="card">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
             <div class="card-body">
                 <p>
                     <a href="{{ site.calendar }}" class="stretched-link">
@@ -28,11 +28,11 @@ layout: wrapper
                 <p class="card-title">Calendar</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.linkedin %}
-    <div class="col-3">
-        <div class="card">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
             <div class="card-body">
                 <p>
                     <a href="{{ site.linkedin }}" class="stretched-link">
@@ -42,11 +42,11 @@ layout: wrapper
                 <p class="card-title">LinkedIn</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.twitter %}
-    <div class="col-3">
-        <div class="card">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
             <div class="card-body">
                 <p>
                     <a href="{{ site.twitter }}" class="stretched-link">
@@ -56,11 +56,11 @@ layout: wrapper
                 <p class="card-title">Twitter</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.medium %}
-    <div class="col-3">
-        <div class="card">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
             <div class="card-body">
                 <p>
                     <a href="{{ site.medium }}" class="stretched-link">
@@ -70,11 +70,11 @@ layout: wrapper
                 <p class="card-title">Medium</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.figma %}
-    <div class="col-3">
-        <div class="card">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
             <div class="card-body">
                 <p>
                     <a href="{{ site.figma }}" class="stretched-link">
@@ -84,11 +84,11 @@ layout: wrapper
                 <p class="card-title">Figma</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.github %}
-    <div class="col-3">
-        <div class="card">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
             <div class="card-body">
                 <p>
                     <a href="{{ site.github }}" class="stretched-link">
@@ -98,11 +98,11 @@ layout: wrapper
                 <p class="card-title">GitHub</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.facebook %}
-    <div class="col-3">
-        <div class="card">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
             <div class="card-body">
                 <p>
                     <a href="{{ site.facebook }}" class="stretched-link">
@@ -112,11 +112,11 @@ layout: wrapper
                 <p class="card-title">Facebook</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.instagram %}
-    <div class="col-3">
-        <div class="card">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
             <div class="card-body">
                 <p>
                     <a href="{{ site.instagram }}" class="stretched-link">
@@ -126,11 +126,11 @@ layout: wrapper
                 <p class="card-title">Instagram</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.rss %}
-    <div class="col-3">
-        <div class="card">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
             <div class="card-body">
                 <p>
                     <a href="{{ site.rss }}" class="stretched-link">
@@ -140,6 +140,6 @@ layout: wrapper
                 <p class="card-title">RSS</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
-</div>
+</ul>

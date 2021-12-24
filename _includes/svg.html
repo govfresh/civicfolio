@@ -1,0 +1,11 @@
+<script>
+    function createSVG(url,element) {
+        var req = new XMLHttpRequest();
+        req.open('GET',url,true);
+        req.setRequestHeader('Content-Type','text/html')
+        req.onload = function () {
+            element.innerHTML = this.response;
+        }
+        req.send();
+    }
+</script>
