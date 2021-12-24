@@ -1,6 +1,6 @@
 # General
 title: Civic Folio
-description: A portfolio website theme for civic technologists.
+description: "A portfolio website theme for civic technologists."
 avatar: avatar.jpg
 
 # Social media
@@ -15,8 +15,19 @@ facebook: https://facebook.com
 instagram: https://instagram.com
 rss: /rss
 
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+
 # Date/time
 date: "%B %-d, %Y"
+timezone: 
 
 defaults:
   - scope:
@@ -54,47 +65,17 @@ collections:
     output: true
     permalink: categories/:title
 
-# Configuration for setting the site width to 100%
-# To enable, uncomment the following line
-# site_width: wide
-
-# Configuration for Google Analytics, add your UA code here:
-# google_analytics_ua: UA-????????-??
-
-# Uncomment to enable AnchorJS functionality on docs layout.
-# See https://github.com/bryanbraun/anchorjs for more information.
-# anchor_js_targets: [h1, h2, h3, h4, h5, h6]
-
-# Enables Private Eye functionality.
-# See https://github.com/18F/private-eye for more information.
-# Private Eye configuration is in assets/js/main.js
-private_eye: true
-
-# To enable search, uncomment the search section
-# You will need to setup a search account with search.gov
-# https://search.usa.gov/signup
-# Your search_site_handle value is from the search.gov settings page.
-
-# search_site_handle: searchgov-site-handle
-
-# touchpoints_form_id:
-
-# Configuration for projects and team collections
-# See https://jekyllrb.com/docs/collections/ for more information about collections.
-# collections:
-#   projects:
-#     output: true
-#   team:
-#     output: true
-
-# Compress Sass
-sass:
-  style: compressed
-
-# https://designsystem.digital.gov/documentation/developers/#sass-compilation-requirements
-autoprefixer:
-  browsers:
-    - "> 2%"
-    - last 2 versions
-    - IE 11
-    - not dead
+# Exclude
+exclude:
+  - CNAME
+  - readme.md
+  - gemfiles/
+  - Gemfile
+#   - Gemfile.lock
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
