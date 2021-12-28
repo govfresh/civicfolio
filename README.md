@@ -41,7 +41,7 @@ We recommend forking this repository if you would like to receive notifications 
 
 ## Forking this repository
 
-You might fork a project to propose changes to the upstream, or original, repository. In this case, it's good practice to regularly sync your fork with the upstream repository. To do this, you'll need to use Git on the command line. 
+In this case, it's good practice to regularly sync your fork with the upstream repository. To do this, you'll need to use Git on the command line. 
 
 1. On GitHub.com, navigate to the [govfresh/civicfolio](https://github.com/govfresh/civicfolio) repository.
 2. In the top-right corner of the page, click **Fork**.
