@@ -10,7 +10,7 @@ The table of contents icon in the corner can help you navigate this README easil
 
 ### The problem
 
-- Civic tech is a competitive job market and there is a preference for candidates can demonstrate experience in a clear, concise way
+- Civic tech is a competitive job market and there is a preference for candidates that can demonstrate experience in a clear, concise way.
 - It’s hard to stand out on LinkedIn to attract the right hiring managers for jobs that align with your interests and experiences. It can also be hard to bring out your perspectives and unique experiences in one profile page.
 - Web builder apps often can feel a bit contained, but building websites completely from scratch can feel overwhelming and time-consuming, especially if you have little to no coding experience.
 
