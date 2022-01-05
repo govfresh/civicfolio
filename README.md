@@ -25,9 +25,10 @@ Currently, we are accepting all different types of contributions, but will be su
 
 ## Community
 
-Our .[Discussions](https://github.com/govfresh/civicfolio/discussions) section is a space for conversations about anything related to the project, working within civic tech, and exchanging ideas. 
+Our [Discussions](https://github.com/govfresh/civicfolio/discussions) section is a space for conversations about anything related to the project, working within civic tech, and exchanging ideas. 
 
 - Plug into the Discussion board
+- Join the [Discord](https://discord.gg/invite/e2uApCj8nx)
 - Contribute back to the project and get recognized
 - Join the newsletter
 
