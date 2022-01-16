@@ -1,5 +1,12 @@
+# Help: https://github.com/govfresh/civicfolio/wiki/Set-up-your-navigation
+
 docs_list_title: nav
 docs:
+
+# - title: "Text"
+#  url: https://link
+
+# ---- Manage your nav links below this line ---- #
 
 - title: About
   url: /about/
@@ -10,7 +17,7 @@ docs:
 - title: Press
   url: /press/
 
-- title: Resumé
+- title: Resume
   url: /resume/
 
 - title: Posts

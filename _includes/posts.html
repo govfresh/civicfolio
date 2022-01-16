@@ -1,8 +1,10 @@
 <div class="card-deck">
-    {% if include.limit %}
-        {% assign limitVar = include.limit | plus: 0 %}
+    {% if include.home == "true" %}
+    {% assign posts = site.posts %}
+    {% else %}
+    {% assign posts = paginator.posts %}
     {% endif %}
-    {% for post in site.posts limit:limitVar %}
+    {% for post in posts %}
     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex align-items-stretch">
         <div class="card">
             <div class="card-body">
@@ -13,7 +15,7 @@
                 </h3>
                 <p class="card-text">{{ post.description }}</p>
                 <p>
-                    <small>{{ page.date | date: site.date }}</small>
+                    <small>{{ post.date | date: site.date }}</small>
                 </p>
             </div>
         </div>

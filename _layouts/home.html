@@ -14,10 +14,12 @@ layout: home
         </div>
         <div class="row">
             <div class="col-sm-8">
+                {% if page.about-description %}
                 <p class="lead">{{ page.about-description }}</p>
+                {% endif %}
                 <p>
                     {% if page.about-link %}
-                    <a href="{{ page.about-link }}" class="btn btn-outline-primary btn-lg mr-2" role="button">{{ page.about-title }}</a>
+                    <a href="{{ page.about-link }}" class="btn btn-outline-primary btn-lg mr-2" role="button">{{ page.about-text }}</a>
                     {% endif %}
                     {% if page.cv-link %}
                     <a href="{{ page.cv-link }}" class="btn btn-outline-secondary btn-lg" role="button">{{ page.cv-text }}</a>
@@ -71,7 +73,7 @@ layout: home
         </div>
         <div class="row">
             <div class="col-12">
-                {% include posts.html limit=3 %}
+                {% include posts.html limit=3 home="true" %}
             </div>
         </div>
         <div class="row">

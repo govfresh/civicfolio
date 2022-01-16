@@ -1,21 +1,21 @@
 ---
 title: About
-description: Sample page using the About layout template.
+description: My bio.
 layout: about
 permalink: /about/
 ---
 
-Civic Folio is a portfolio website for civic technologists.
+CivicFolio is a portfolio website for civic technologists.
 
-## Who it's for
+## Purpose
 
-Civic Folio is for anyone, but it's more focused on supporting civic designers and developers interested in building their portfolio websites while learning about open, collaborative tools and ways of working.
+CivicFolio aims to help civic-interested designers and technologists learn-by-doing the basic principles of civic technology:
 
-## Technology
+* Working in public
+* Building accessible websites
+* Using open, collaborative tools and technologies
 
-Civic Folio is built using:
+## Learn more
 
-* Jekyll
-* Bootstrap
-* Font Awesome
-* GitHub Pages
+* [Documentation](https://github.com/govfresh/civicfolio/wiki)
+* [Support](https://github.com/govfresh/civicfolio/wiki/Support)

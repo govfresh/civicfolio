@@ -1,5 +1,13 @@
+# Help: https://github.com/govfresh/civicfolio/wiki/Set-up-your-press-page
+
 docs_list_title: press
 docs:
+
+# - title: "Headline of a press article"
+#  url: https://govfresh.com
+#  source: Source name
+
+# ---- Manage your press links below this line ---- #
 
 - title: "Headline of a press article"
   url: https://govfresh.com

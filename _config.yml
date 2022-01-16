@@ -1,34 +1,47 @@
 # General
-title: Civic Folio
-description: "A portfolio website theme for civic technologists."
-avatar: avatar.jpg
+# Help: https://github.com/govfresh/civicfolio/wiki/Configure-your-site-settings
+title: CivicFolio
 
-# Social media
+# Google Analytics
+# Help: https://github.com/govfresh/civicfolio/wiki/Add-Google-Analytics
+analytics-id: G-PH233QG28Y
+
+# Connect
+# Help: https://github.com/govfresh/civicfolio/wiki/Configure-your-site-settings
 email: mailto:name@email.com
 calendar: /calendar
 linkedin: https://linkedin.com
-twitter: https://twitter.com
-medium: https://medium.com
-figma: https://figma.com
-github: https://github.com
-facebook: https://facebook.com
-instagram: https://instagram.com
-rss: /rss
+twitter: https://twitter.com/govfresh
+medium: https://medium.com/@govfresh
+figma: https://figma.com/govfresh
+github: https://github.com/govfresh
+facebook: https://facebook.com/govfresh
+instagram: https://instagram.com/govfresh
+rss: /feed.xml
+
+# ---- You do not need to do anything below this line ---- #
+
+# Pagination
+
+paginate: 9
+paginate_path: "/posts/page:num/"
 
 # Build settings
+kramdown:
+  auto_ids: true
 markdown: kramdown
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-
-kramdown:
-  auto_ids: true
+  - jekyll-paginate
 
 # Date/time
 date: "%B %-d, %Y"
-timezone: 
 
+# Defaults
 defaults:
   - scope:
       path: ""
@@ -45,12 +58,8 @@ defaults:
       type: "work"
     values:
       layout: "work"
-  - scope:
-      path: ""
-      type: "category"
-    values:
-      layout: "category"
-      
+
+# Collections
 collections:
   pages:
     output: true
@@ -61,9 +70,6 @@ collections:
   work:
     output: true
     permalink: /work/:title
-  categories:
-    output: true
-    permalink: categories/:title
 
 # Exclude
 exclude:
