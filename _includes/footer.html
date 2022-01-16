@@ -25,17 +25,15 @@
         </div>
     </footer>
     <!-- Analytics -->
-    {{ jekyll.environment }}
     {% if jekyll.environment == "production" %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    GHekvisgeijk
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics-id }}"></script>
     <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', '{{ site.analytics-id }}');
+        gtag('config', '{{ site.analytics-id }}');
     </script>
     {% endif %}
 </body>
