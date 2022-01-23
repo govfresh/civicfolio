@@ -3,38 +3,56 @@ layout: wrapper
 ---
 
 {% include posts.html %}
-
 {% if paginator.total_pages > 1 %}
-<nav aria-label="Page navigation">
-    <ul class="pagination">
+<nav aria-label="Pagination" class="usa-pagination">
+    <ul class="usa-pagination__list">
         {% if paginator.previous_page %}
-        <li class="page-item">
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-link">Previous</a>
+        <li class="usa-pagination__item usa-pagination__arrow">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="usa-pagination__link usa-pagination__previous-page" aria-label="Previous page">
+                <span class="usa-pagination__link-text"> Previous</span>
+            </a>
         </li>
         {% else %}
-        <li class="page-item disabled">
-            <span class="page-link">Previous</span>
+        <li class="usa-pagination__item usa-pagination__arrow">
+            <a
+                href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+                class="usa-pagination__link usa-pagination__previous-page"
+                aria-label="Previous page"
+                disabled
+            >
+                <span class="usa-pagination__link-text"> Previous</span>
+            </a>
         </li>
-        {% endif %} {% for page in (1..paginator.total_pages) %} {% if page ==
-paginator.page %}
-        <li class="page-item active">
-            <a class="page-link" href="#">{{ page }}</a>
+        {% endif %}
+        {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <li class="usa-pagination__item usa-pagination__page-no">
+            <a class="usa-pagination__button usa-current" href="#" aria-label="{{ page }}">{{ page }}</a>
         </li>
         {% elsif page == 1 %}
-        <li class="page-item">
-            <a href="{{ site.baseurl }}/posts/" class="page-link">{{ page }}</a>
+        <li class="usa-pagination__item usa-pagination__page-no">
+            <a href="{{ site.baseurl }}/posts/" class="usa-pagination__button" aria-label="{{ page }}">{{ page }}</a>
         </li>
         {% else %}
-        <li class="page-item">
-            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="page-link">{{ page }}</a>
+        <li class="usa-pagination__item usa-pagination__page-no">
+            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="usa-pagination__button" aria-label="{{ page }}">{{ page }}</a>
         </li>
-        {% endif %} {% endfor %} {% if paginator.next_page %}
-        <li class="page-item">
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-link">Next</a>
+        {% endif %}
+        {% endfor %}
+        {% if paginator.next_page %}
+        <li class="usa-pagination__item usa-pagination__page-no">
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="usa-pagination__button">Next</a>
         </li>
         {% else %}
-        <li class="page-item disabled">
-            <span class="page-link">Next</span>
+        <li class="usa-pagination__item usa-pagination__arrow">
+            <a
+                href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+                class="usa-pagination__link usa-pagination__next-page"
+                aria-label="Next page"
+                disabled
+            >
+                <span class="usa-pagination__link-text">Next</span>
+            </a>
         </li>
         {% endif %}
     </ul>

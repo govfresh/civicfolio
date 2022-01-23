@@ -54,146 +54,146 @@
 </p>
 {% else %}
 <!-- Connect page -->
-<div class="card-deck text-center connect">
+<ul class="usa-card-group connect">
     {% if site.email %}
-    <div class="col-3">
-        <div class="card">
-            <div class="card-body">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
                 <p>
-                    <a href="{{ site.email }}" class="stretched-link">
+                    <a href="{{ site.email }}" aria-label="Email">
                         <i class="fas fa-at fa-2x"></i>
                     </a>
                 </p>
                 <p class="card-title">Email</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.calendar %}
-    <div class="col-3">
-        <div class="card">
-            <div class="card-body">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
                 <p>
-                    <a href="{{ site.calendar }}" class="stretched-link">
+                    <a href="{{ site.calendar }}" aria-label="Calendar">
                         <i class="fas fa-calendar fa-2x"></i>
                     </a>
                 </p>
                 <p class="card-title">Calendar</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.linkedin %}
-    <div class="col-3">
-        <div class="card">
-            <div class="card-body">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
                 <p>
-                    <a href="{{ site.linkedin }}" class="stretched-link">
+                    <a href="{{ site.linkedin }}" aria-label="LinkedIn">
                         <i class="fab fa-linkedin fa-2x"></i>
                     </a>
                 </p>
                 <p class="card-title">LinkedIn</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.twitter %}
-    <div class="col-3">
-        <div class="card">
-            <div class="card-body">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
                 <p>
-                    <a href="{{ site.twitter }}" class="stretched-link">
+                    <a href="{{ site.twitter }}" aria-label="Twitter">
                         <i class="fab fa-twitter fa-2x"></i>
                     </a>
                 </p>
                 <p class="card-title">Twitter</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.medium %}
-    <div class="col-3">
-        <div class="card">
-            <div class="card-body">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
                 <p>
-                    <a href="{{ site.medium }}" class="stretched-link">
+                    <a href="{{ site.medium }}" aria-label="Medium">
                         <i class="fab fa-medium fa-2x"></i>
                     </a>
                 </p>
                 <p class="card-title">Medium</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.figma %}
-    <div class="col-3">
-        <div class="card">
-            <div class="card-body">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
                 <p>
-                    <a href="{{ site.figma }}" class="stretched-link">
+                    <a href="{{ site.figma }}" aria-label="Figma">
                         <i class="fab fa-figma fa-2x"></i>
                     </a>
                 </p>
                 <p class="card-title">Figma</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.github %}
-    <div class="col-3">
-        <div class="card">
-            <div class="card-body">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
                 <p>
-                    <a href="{{ site.github }}" class="stretched-link">
+                    <a href="{{ site.github }}" aria-label="GitHub">
                         <i class="fab fa-github fa-2x"></i>
                     </a>
                 </p>
                 <p class="card-title">GitHub</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.facebook %}
-    <div class="col-3">
-        <div class="card">
-            <div class="card-body">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
                 <p>
-                    <a href="{{ site.facebook }}" class="stretched-link">
+                    <a href="{{ site.facebook }}" aria-label="Facebook">
                         <i class="fab fa-facebook fa-2x"></i>
                     </a>
                 </p>
                 <p class="card-title">Facebook</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.instagram %}
-    <div class="col-3">
-        <div class="card">
-            <div class="card-body">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
                 <p>
-                    <a href="{{ site.instagram }}" class="stretched-link">
+                    <a href="{{ site.instagram }}" aria-label="Instagram">
                         <i class="fab fa-instagram fa-2x"></i>
                     </a>
                 </p>
                 <p class="card-title">Instagram</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
     {% if site.rss %}
-    <div class="col-3">
-        <div class="card">
-            <div class="card-body">
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
                 <p>
-                    <a href="{{ site.rss }}" class="stretched-link">
+                    <a href="{{ site.rss }}" aria-label="RSS">
                         <i class="fas fa-rss fa-2x"></i>
                     </a>
                 </p>
                 <p class="card-title">RSS</p>
             </div>
         </div>
-    </div>
+    </li>
     {% endif %}
-</div>
+</ul>
 {% endif %}

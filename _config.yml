@@ -1,6 +1,7 @@
 # General
 # Help: https://github.com/govfresh/civicfolio/wiki/Configure-your-site-settings
 title: CivicFolio
+description: A portfolio website theme for civic technologists.
 
 # Google Analytics
 # Help: https://github.com/govfresh/civicfolio/wiki/Add-Google-Analytics
@@ -21,9 +22,13 @@ rss: /feed.xml
 
 # ---- You do not need to do anything below this line ---- #
 
+# Powered by CivicFolio footer link
+
+powered-by: Yes
+
 # Pagination
 
-paginate: 9
+paginate: 2
 paginate_path: "/posts/page:num/"
 
 # Build settings

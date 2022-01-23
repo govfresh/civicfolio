@@ -4,13 +4,13 @@ layout: home
 
 # Jumbotron text, browser title and page meta description
 title: A portfolio website theme for civic technologists.
-description: Civic Folio is a portfolio website theme for civic technologists.
+description: CivicFolio is a portfolio website theme for civic technologists.
 
 # About section title
 about-title: About
 
 # About section description
-about-description: Civic Folio is a portfolio website theme for civic technologists.
+about-description: CivicFolio is a portfolio website theme for civic technologists.
 
 # About section profile img
 about-img: profile.png

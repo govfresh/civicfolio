@@ -1,0 +1,331 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Public Sans Thin";
+    src: url("/assets/uswds/fonts/public-sans/PublicSans-Thin.woff2") format("woff2"),
+        url("/assets/uswds/fonts/public-sans/PublicSans-Thin.woff2") format("woff");
+}
+
+@font-face {
+
+    font-family: "Public Sans Light";
+    src: url("/assets/uswds/fonts/public-sans/PublicSans-Light.woff2") format("woff2"),
+        url("/assets/uswds/fonts/public-sans/PublicSans-Light.woff") format("woff");
+}
+
+@font-face {
+
+    font-family: "Public Sans Regular";
+    src: url("/assets/uswds/fonts/public-sans/PublicSans-Regular.woff2") format("woff2"),
+        url("/assets/uswds/fonts/public-sans/PublicSans-Regular.woff") format("woff");
+}
+
+@font-face {
+
+    font-family: "Public Sans Medium";
+    src: url("/assets/uswds/fonts/public-sans/PublicSans-Medium.woff2") format("woff2"),
+        url("/assets/uswds/fonts/public-sans/PublicSans-Medium.woff") format("woff");
+
+}
+
+@font-face {
+    font-family: "Public Sans Bold";
+    src: url("/assets/uswds/fonts/public-sans/PublicSans-Bold.woff2") format("woff2"),
+        url("/assets/uswds/fonts/public-sans/PublicSans-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Public Sans Black";
+    src: url("/assets/uswds/fonts/public-sans/PublicSans-Black.woff2") format("woff2"),
+        url("/assets/uswds/fonts/public-sans/PublicSans-Black.woff") format("woff");
+}
+
+/* Root settings */
+
+:root {
+    /* Colors */
+    --color-1: #0076d6;
+    --color-5: #54278f;
+    --color-2: #212121;
+    --color-3: #c9c9c9;
+    --color-6: #f1f1f1;
+    --color-4: #ffffff;
+    /* Font family */
+    --font-1: "Public Sans Bold", sans-serif;
+    --font-2: "Public Sans Regular", sans-serif;
+    /* Sizes for fonts, spacing */
+    --size-1: 0;
+    --size-2: .5rem;
+    --size-3: 1rem;
+    --size-4: 1.2rem;
+    --size-5: 2rem;
+    --size-6: 3rem;
+    --size-7: .25rem;
+    --size-8: .625rem;
+    --size-9: 4.675rem;
+    --size-10: 1.5625rem;
+    --size-11: 12.5rem;
+    --size-12: 18.75rem;
+    --size-13: 0.0625rem;
+    --size-14: 15rem;
+    --size-15: 10rem;
+    --size-16: 20rem;
+}
+
+/* General */
+
+body, p, li {
+    color: var(--color-2);
+    font-family: var(--font-2) !important;
+}
+
+/* Headers */
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-2);
+    font-family: var(--font-1) !important;
+}
+
+/* Lists */
+
+ul.list-unstyled li {
+    padding-bottom: var(--size-3);
+}
+
+/* Navbar */
+
+.usa-logo, .brand {
+    font-family: var(--font-1) !important;
+}
+
+.usa-logo a {
+    color: var(--color-2) !important;
+}
+
+.usa-nav__primary>.usa-nav__primary-item>a {
+    color: var(--color-2);
+    font-family: var(--font-2);
+    font-weight: normal;
+}
+
+/* Cards */
+
+.usa-card__container {
+    border: var(--size-13) solid var(--color-2);
+}
+
+/* Images */
+
+figcaption {
+    padding-bottom: var(--size-3);
+    padding-top: var(--size-3);
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+img.circle {
+    border-radius: 50%;
+}
+
+img.md {
+    max-width: var(--size-15);
+}
+
+img.lg {
+    max-width: var(--size-16);
+}
+
+/* Hero */
+
+.usa-hero {
+    background-image: none;
+}
+
+.usa-header+.usa-section, .usa-header+main {
+    border-top: var(--size-13) solid var(--color-2);
+}
+
+/* Main */
+
+main p, main li {
+    font-size: var(--size-4) !important;
+    line-height: var(--size-5);
+}
+
+blockquote {
+    border-left: var(--size-7) solid var(--color-1);
+    margin-left: var(--size-5);
+    padding-left: var(--size-5);
+    padding-right: var(--size-5);
+    margin-bottom: var(--size-5);
+    margin-top: var(--size-5);
+}
+
+/* Pagination */
+
+.usa-pagination__button usa-current {
+    background-color: var(--color-2);
+}
+
+a.usa-pagination__button {
+    border-color: var(--color-2);
+    color: var(--color-2);
+}
+
+/* Buttons */
+
+button, a.usa-button {
+    transition: .5s background-color, color;
+}
+
+.usa-menu-btn, .usa-button {
+    font-family: var(--font-2);
+    font-weight: normal;
+}
+
+.usa-menu-btn {
+    color: var(--color-2);
+    background-color: var(--color-4);
+}
+
+a.usa-button--outline, a.usa-button--outline:visited {
+    color: var(--color-2);
+    border: var(--size-13) solid var(--color-2);
+    box-shadow: none;
+}
+
+a.usa-button--outline:hover, .usa-menu-btn:hover {
+    background-color: var(--color-2);
+    border: var(--size-13) solid var(--color-2);
+    box-shadow: none;
+    color: var(--color-4);
+}
+
+/* Connect */
+
+.connect a, .connect a:visited {
+    color: var(--color-2);
+}
+
+footer .connect {
+    margin: var(--size-5) var(--size-1);
+}
+
+footer .connect a, footer .connect a:visited, footer .connect a:hover {
+    margin-bottom: var(--size-3);
+    margin-right: var(--size-3);
+    padding: var(--size-1);
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    margin: var(--size-5) var(--size-1) var(--size-1) var(--size-1) !important;
+    padding: var(--size-5) var(--size-1);
+    border-top: var(--size-13) solid var(--color-2);
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer a, footer a:visited, footer {
+    color: var(--color-2);
+}
+
+/* Responsive typography */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.8rem !important;
+        line-height: normal;
+    }
+
+    h2 {
+        font-size: 1.8rem !important;
+
+    }
+
+    h3 {
+        font-size: 1.4rem !important;
+    }
+
+    p.lead {
+        font-size: 1.2rem !important;
+        line-height: normal;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    h1 {
+        font-size: 4.1rem !important;
+        line-height: normal;
+    }
+
+    h2 {
+        font-size: 2.2rem !important;
+
+    }
+
+    h3 {
+        font-size: 1.6rem !important;
+    }
+
+    p.lead {
+        font-size: 1.6rem !important;
+        line-height: normal;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    h1 {
+        font-size: 4rem !important;
+        line-height: normal;
+    }
+
+    h2 {
+        font-size: 2.4rem !important;
+
+    }
+
+    h3 {
+        font-size: 1.8rem !important;
+    }
+
+    p.lead {
+        font-size: 1.8rem !important;
+        line-height: normal;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    h1 {
+        font-size: 4rem !important;
+        line-height: normal;
+    }
+
+    h2 {
+        font-size: 2.4rem !important;
+
+    }
+
+    h3 {
+        font-size: 1.8rem !important;
+    }
+
+    p.lead {
+        font-size: 2rem !important;
+        line-height: normal;
+    }
+
+}

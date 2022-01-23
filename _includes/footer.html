@@ -1,40 +1,40 @@
 <!-- Footer -->
 <footer>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-7">
-                    <p class="brand">{{ site.title }}</p>
-                    <p>{{ site.description }}</p>
-                    <div class="connect">
-                        {% include connect.html type="footer" %}
-                    </div>
+    <div class="grid-container">
+        <div class="grid-row">
+            <div class="tablet:grid-col-8">
+                {% if site.title %}
+                <p class="brand">{{ site.title }}</p>
+                {% endif %}
+                    {% if site.description %}
+                <p>{{ site.description }}</p>
+                {% endif %}
+                <div class="connect">
+                    {% include connect.html type="footer" %}
                 </div>
-                <div class="col-5">
-                    <ul class="list-unstyled">
-                        {% for item in site.data.nav.docs %}
+                {% if site.powered-by %}
+                <p>
+                    Powered by
+                    <a href="https://civicfolio.govfresh.com">CivicFolio</a>
+                </p>
+                {% endif %}
+            </div>
+            <div class="tablet:grid-col-4">
+                <ul class="usa-list usa-list--unstyled">
+                    {% for item in site.data.nav.docs %}
                         {% if item.url %}
-                        <li>
-                            <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-                        </li>
-                        {% endif %}
+                    <li>
+                        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+                    </li>
+                    {% endif %}
                         {% endfor %}
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
     </footer>
     <!-- Analytics -->
     {% if jekyll.environment == "production" %}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics-id }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', '{{ site.analytics-id }}');
-    </script>
+    {% include analytics.html %}
     {% endif %}
 </body>
 </html>
