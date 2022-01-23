@@ -1,0 +1,7 @@
+# .github/release.yml
+
+changelog:
+  categories:
+    - title: New features 🎉
+    - title: Bug fixes 🐛
+    - title: Other changes

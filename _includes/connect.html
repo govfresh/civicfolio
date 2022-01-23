@@ -1,0 +1,199 @@
+<!-- Footer -->
+{% if include.type == "footer" %}
+<p>
+    {% if site.email %}
+    <a href="{{ site.email }}" aria-label="Email">
+        <i class="fas fa-at fa-lg"></i>
+    </a>
+    {% endif %}
+{% if site.calendar %}
+    <a href="{{ site.calendar }}" aria-label="Calendar">
+        <i class="fas fa-calendar fa-lg"></i>
+    </a>
+    {% endif %}
+{% if site.linkedin %}
+    <a href="{{ site.linkedin }}" aria-label="LinkedIn">
+        <i class="fab fa-linkedin fa-lg"></i>
+    </a>
+    {% endif %}
+{% if site.twitter %}
+    <a href="{{ site.twitter }}" aria-label="Twitter">
+        <i class="fab fa-twitter fa-lg"></i>
+    </a>
+    {% endif %}
+{% if site.medium %}
+    <a href="{{ site.medium }}" aria-label="Medium">
+        <i class="fab fa-medium fa-lg"></i>
+    </a>
+    {% endif %}
+{% if site.figma %}
+    <a href="{{ site.figma }}" aria-label="Figma">
+        <i class="fab fa-figma fa-lg"></i>
+    </a>
+    {% endif %}
+{% if site.github %}
+    <a href="{{ site.github }}" aria-label="GitHub">
+        <i class="fab fa-github fa-lg"></i>
+    </a>
+    {% endif %}
+{% if site.facebook %}
+    <a href="{{ site.facebook }}" aria-label="Facebook">
+        <i class="fab fa-facebook fa-lg"></i>
+    </a>
+    {% endif %}
+{% if site.instagram %}
+    <a href="{{ site.instagram }}" aria-label="Instagram">
+        <i class="fab fa-instagram fa-lg"></i>
+    </a>
+    {% endif %}
+{% if site.rss %}
+    <a href="{{ site.rss }}" aria-label="RSS">
+        <i class="fas fa-rss fa-lg"></i>
+    </a>
+    {% endif %}
+</p>
+{% else %}
+<!-- Connect page -->
+<ul class="usa-card-group connect">
+    {% if site.email %}
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
+                <p>
+                    <a href="{{ site.email }}" aria-label="Email">
+                        <i class="fas fa-at fa-2x"></i>
+                    </a>
+                </p>
+                <p class="card-title">Email</p>
+            </div>
+        </div>
+    </li>
+    {% endif %}
+    {% if site.calendar %}
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
+                <p>
+                    <a href="{{ site.calendar }}" aria-label="Calendar">
+                        <i class="fas fa-calendar fa-2x"></i>
+                    </a>
+                </p>
+                <p class="card-title">Calendar</p>
+            </div>
+        </div>
+    </li>
+    {% endif %}
+    {% if site.linkedin %}
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
+                <p>
+                    <a href="{{ site.linkedin }}" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </p>
+                <p class="card-title">LinkedIn</p>
+            </div>
+        </div>
+    </li>
+    {% endif %}
+    {% if site.twitter %}
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
+                <p>
+                    <a href="{{ site.twitter }}" aria-label="Twitter">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </p>
+                <p class="card-title">Twitter</p>
+            </div>
+        </div>
+    </li>
+    {% endif %}
+    {% if site.medium %}
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
+                <p>
+                    <a href="{{ site.medium }}" aria-label="Medium">
+                        <i class="fab fa-medium fa-2x"></i>
+                    </a>
+                </p>
+                <p class="card-title">Medium</p>
+            </div>
+        </div>
+    </li>
+    {% endif %}
+    {% if site.figma %}
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
+                <p>
+                    <a href="{{ site.figma }}" aria-label="Figma">
+                        <i class="fab fa-figma fa-2x"></i>
+                    </a>
+                </p>
+                <p class="card-title">Figma</p>
+            </div>
+        </div>
+    </li>
+    {% endif %}
+    {% if site.github %}
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
+                <p>
+                    <a href="{{ site.github }}" aria-label="GitHub">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </p>
+                <p class="card-title">GitHub</p>
+            </div>
+        </div>
+    </li>
+    {% endif %}
+    {% if site.facebook %}
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
+                <p>
+                    <a href="{{ site.facebook }}" aria-label="Facebook">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                </p>
+                <p class="card-title">Facebook</p>
+            </div>
+        </div>
+    </li>
+    {% endif %}
+    {% if site.instagram %}
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
+                <p>
+                    <a href="{{ site.instagram }}" aria-label="Instagram">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </p>
+                <p class="card-title">Instagram</p>
+            </div>
+        </div>
+    </li>
+    {% endif %}
+    {% if site.rss %}
+    <li class="tablet:grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="card-body text-center">
+                <p>
+                    <a href="{{ site.rss }}" aria-label="RSS">
+                        <i class="fas fa-rss fa-2x"></i>
+                    </a>
+                </p>
+                <p class="card-title">RSS</p>
+            </div>
+        </div>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
