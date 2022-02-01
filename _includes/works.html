@@ -1,4 +1,7 @@
 <ul class="usa-card-group">
+    {% if include.limit %}
+    {% assign limitVar = include.limit | plus: 0 %}
+    {% endif %}
     {% for page in site.work limit:limitVar %}
     <li class="tablet:grid-col-4 usa-card">
         <div class="usa-card__container">

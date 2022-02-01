@@ -34,9 +34,9 @@
         <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
         <title>{% if page.title %}{{ page.title | strip_html }} - {% endif %}{{ site.title }}</title>
         <!-- Fonts -->
+        {% include fonts.html %}
         <!-- Font Awesome -->
         <link href="{{ site.baseurl }}/assets/font-awesome/css/all.css" rel="stylesheet">
-        {% include fonts.html %}
         <!-- USWDS -->
         <link href="{{site.baseurl}}/assets/uswds/css/uswds.css" rel="stylesheet">
         <!-- Custom CSS -->

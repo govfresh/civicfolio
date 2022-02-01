@@ -39,7 +39,7 @@ layout: home
         <div class="grid-row">
             <div class="tablet:grid-col-12">
                 <h2>{{ page.work-title }}</h2>
-                {% include works.html limit=6 %}
+                {% include works.html limit=3 %}
                 <p>
                     <a href="{{ page.work-link }}" class="usa-button usa-button--outline">{{ page.work-title }}</a>
                 </p>
@@ -52,7 +52,7 @@ layout: home
         <div class="grid-row">
             <div class="tablet:grid-col-12">
                 <h2>{{ page.press-title }}</h2>
-                {% include press.html limit=6 %}
+                {% include press.html limit=3 %}
                 <p>
                     <a href="{{ page.press-link }}" class="usa-button usa-button--outline">{{ page.press-title }}</a>
                 </p>
@@ -66,7 +66,7 @@ layout: home
             <div class="tablet:grid-col-12">
                 <h2>{{ page.posts-title }}</h2>
                 {% include posts.html limit=3 home="true" %}
-        {% if page.posts-title %}
+                {% if page.posts-title %}
                 <p>
                     <a href="{{ page.posts-link }}" class="usa-button usa-button--outline">{{ page.posts-title }}</a>
                 </p>

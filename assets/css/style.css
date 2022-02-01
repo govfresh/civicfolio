@@ -51,8 +51,11 @@
     --color-6: #f1f1f1;
     --color-4: #ffffff;
     /* Font family */
-    --font-1: "Public Sans Bold", sans-serif;
-    --font-2: "Public Sans Regular", sans-serif;
+    --font-1: "Public Sans", sans-serif;
+    --font-2: "Public Sans", sans-serif;
+    /* Font weight */
+    --weight-1: 400;
+    --weight-2: 700;
     /* Sizes for fonts, spacing */
     --size-1: 0;
     --size-2: .5rem;
@@ -77,6 +80,7 @@
 body, p, li {
     color: var(--color-2);
     font-family: var(--font-2) !important;
+    font-weight: var(--weight-1);
 }
 
 /* Headers */
@@ -84,6 +88,7 @@ body, p, li {
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-2);
     font-family: var(--font-1) !important;
+    font-weight: var(--weight-2);
 }
 
 /* Lists */
@@ -105,7 +110,7 @@ ul.list-unstyled li {
 .usa-nav__primary>.usa-nav__primary-item>a {
     color: var(--color-2);
     font-family: var(--font-2);
-    font-weight: normal;
+    font-weight: var(--weight-1);
 }
 
 /* Cards */
@@ -183,7 +188,7 @@ button, a.usa-button {
 
 .usa-menu-btn, .usa-button {
     font-family: var(--font-2);
-    font-weight: normal;
+    font-weight: var(--weight-1);
 }
 
 .usa-menu-btn {
