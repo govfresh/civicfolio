@@ -2,6 +2,7 @@
 title: Work example 1
 description: Description of work example 1.
 img-feat: work.png
+img-alt: Work example 1 image
 website: https://
 methods:
   - x

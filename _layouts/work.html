@@ -6,11 +6,15 @@ layout: work
 <main id="main-content">
     {% include hero.html %}
     <div class="grid-container">
-        <div class="grid-row">
+        <div class="grid-row grid-gap">
             <div class="tablet:grid-col-8">
                 {{ content | markdownify }}
             </div>
-            <div class="tablet:grid-col-4"></div>
+            <div class="tablet:grid-col-4">
+                {% if page.img-feat %}
+                <img src="{{ site.baseurl }}/img/work/{{ page.img-feat }}" alt="{{ page.title }}" class="rounded">
+                {% endif %}
+            </div>
         </div>
         <div class="grid-row">
             <div class="tablet:grid-col-6">
@@ -96,5 +100,15 @@ layout: work
             {% endif %}
         </div>
     </div>
+    {% if page.website %}
+    <div class="grid-container">
+        <div class="grid-row">
+            <div class="tablet:grid-col-12">
+                <h2>Learn more</h2>
+                <a href="{{ page.website }}" class="usa-button usa-button--outline margin-bottom-2">Visit website</a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
 </main>
 {% include footer.html %}

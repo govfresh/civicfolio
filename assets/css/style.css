@@ -131,6 +131,10 @@ img {
     width: 100%;
 }
 
+img.rounded {
+    border-radius: 5px;
+}
+
 img.circle {
     border-radius: 50%;
 }
